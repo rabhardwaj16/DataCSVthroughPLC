@@ -17,6 +17,8 @@ while True:
             print("Directory " , dirName ,  " Created ")
         else:    
             pass
+        
+        # Creating .csv data file on hourly basis
         file_n = "Python"+rightnow.strftime('%Y%m%d_%H')+".csv"
         file_dir = dirName + "/" +file_n
         
@@ -30,7 +32,6 @@ while True:
         string_data = ""
         for a in chr_lst:  
                string_data += a
-
 
         if save_trig == True:
             if Triggered == False:
